@@ -3,33 +3,47 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, height=device-height, initial-scale=1.0">
     <link href="https://fonts.googleapis.com/css?family=Montserrat:800" rel="stylesheet">
+    <link rel="stylesheet" href="css/normalize.css">
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/css/bootstrap.min.css">
     <link rel="stylesheet" href="css/styles.css">
     <link rel="icon" href="img/my_favicon.png">
     <title>Tribuite Page - Super Mario</title>
 </head>
-<body>
+<body class="container">
     <div id="main">
         <header>
-            <h1 id="title">Super Mario - A Tribute</h1>
-            <div id="img-div">
-                <img id="image" src="#" alt="Mario's design through the years">
-                <figcaption id="img-caption">The evolution of video game icon, Super Mario</figcaption>
-            </div>
+            <h1 id="title">
+                <div id="title-main">Super Mario</div>
+                <div id="title-sub">Gaming Icon</div>
+            </h1>
             <div id="tribute-info">
-                Lorem ipsum dolor sit amet consectetur, adipisicing elit. Fugiat ad suscipit quia adipisci error nihil eaque iure, quod quisquam eum cum dicta nisi dolorum tempore, vitae sunt iste consequuntur odio. Lorem ipsum dolor sit amet consectetur, adipisicing elit. Fugiat ad suscipit quia adipisci error nihil eaque iure, quod quisquam eum cum dicta nisi dolorum tempore, vitae sunt iste consequuntur odio.
-                
-                Lorem ipsum dolor sit amet consectetur, adipisicing elit. Fugiat ad suscipit quia adipisci error nihil eaque iure, quod
-                quisquam eum cum dicta nisi dolorum tempore, vitae sunt iste consequuntur odio.
+                <p>
+                    Mario is a fictional character in the Mario video game franchise, owned by Nintendo and created by Japanese video game
+                    designer Shigeru Miyamoto. Serving as the company's mascot and the eponymous protagonist of the series, Mario has
+                    appeared in over 200 video games since his creation. Depicted as a short, pudgy, Italian plumber who resides in the
+                    Mushroom Kingdom, his adventures generally center upon rescuing Princess Peach from the Koopa villain Bowser.
+                </p>
+                <p>
+                    With more than 500 million units sold worldwide, the overall Mario franchise is the best-selling video game franchise
+                    of all time.
+                </p>
+            </div>
+            <div id="img-div">
+                <figcaption id="img-caption">The Evolution of Super Mario</figcaption>
+                <div id="img-container-marios">
+                    <img id="image" src="img/marios.jpg" alt="Mario's designs through the years">
+                </div>
             </div>
         </header>
-        <main>
-            <h3>Mario's Highlights</h3>
+        <hr>
+        <section class="gamesList">
+            <h3>The Highlights</h3>
             <article class="game" id="mario1">
                 <h4 class="game-title">Super Mario Bros.</h4>
                 <figure>
-                    <img class="game-box" src="" alt="">
+                    <img class="game-box" src="" alt="Boxart for Mario 1">
                     <figcaption class="game-info">
+                        <div>Console: NES</div>
                         <div>Released: 1985</div>
                         <div>Metacritic: 95%</div>
                         <div>Sold: 80 million copies</div>
@@ -49,7 +63,7 @@
             <article class="game" id="mario3">
                 ...
             </article>
-        </main>
+        </section class="games">
         <section>
             <h3>Resources</h3>
             <a href="#" id="tribute-info">Wikipage...</a>
