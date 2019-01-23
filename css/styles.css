@@ -16,25 +16,49 @@
     font-size: 3.5rem;
     text-align: center;
     background: blue;
+    background: -moz-linear-gradient(180deg, rgba(0,67,255,1) 50%,rgba(78,140,241,1) 75%,rgba(125,185,232,0) 105%);
+    background: -webkit-linear-gradient(180deg, rgba(0,67,255,1) 50%,rgba(78,140,241,1) 75%,rgba(125,185,232,0) 105%);
+    background: linear-gradient(180deg, rgba(0,67,255,1) 50%,rgba(78,140,241,1) 75%,rgba(125,185,232,0) 105%);
 }
 
 #title-main {
-    background: red;
-    border-left: 1.5rem solid blue;
-    border-right: 1.5rem solid blue;
+    background: rgb(220, 48, 32);
+    border-left: 2rem solid blue;
+    border-right: 2rem solid blue;
+    border-bottom: .2rem solid blue;
     border-bottom-left-radius: 15%;
     border-bottom-right-radius: 15%;
+    color: rgb(254, 197, 193);
+    text-shadow: 3px 6px 0 black;
 }
 
 #title-sub {
     color: white;
     line-height: 3rem;
     font-size: 1.5rem;
+    text-shadow: 0 0 5px darkblue;
+}
+
+#img-div {
+    margin-bottom: 20px;
+    padding: 10px 60px;
+    box-shadow: inset 60px 0 0 0 rgb(0,240,0), inset -60px 0 0 0 rgb(0,240,0);
 }
 
 #img-container-marios {
-    overflow-x: scroll;
     position: relative;
+    overflow-x: scroll;
+    border-top: 5px solid rgb(0,240,0);
+    border-bottom: 5px solid rgb(0, 240, 0);
+    border-left: 1px solid rgba(0, 150, 0, 0.9);
+    border-right: 1px solid rgba(0,150,0,.9);
+}
+
+.pipeBlendHorizontal {
+    position: absolute;
+    height: 100%;
+    width: 150%;
+    background: linear-gradient(0deg, rgba(0,255,0,.75) 0%,rgba(83,202,18,0) 25%,rgba(97,196,25,0) 50%,rgba(83,201,18,0) 75%,rgba(0,255,0,.75) 100%);
 }
 
 #image {
@@ -42,25 +66,65 @@
 }
 
 #img-caption {
-    font-weight: 800;
+    font-weight: 650;
     text-align: center;
     font-size: 1.25rem;
 }
 
-hr {
-
-}
-
-h3 {
+h3, h4 {
+    margin: 0 auto;
     text-align: center;
 }
 
-.game {
-    background: lightblue;
-    margin: 10px 0;
-    padding: 10px;
+.pipeHeadBlue {
+    background: rgb(102, 102, 255);
+    height: 60px;
+    display: flex;
+    align-items: center;
 }
 
+.games {
+    margin: 0 auto;
+    width: calc(100% - 20px);
+    border-left: 5px solid rgb(102, 102, 255);
+    border-right: 5px solid rgb(102, 102, 255);
+    border-top: 1px solid rgba(47, 47, 177, 0.9);
+    border-bottom: 1px solid rgba(47, 47, 177, 0.9);
+    background: linear-gradient(90deg, rgba(102, 102, 255,0.9) 0%,rgba(83,202,18,0) 45%,rgba(83,201,18,0) 55%,rgba(102, 102, 255,.9) 100%);
+}
+
+.game {
+    background: rgba(255,255,255,.25);
+    margin: 10px 10px;
+    padding: 5px;
+}
+
+.game-title {
+    text-transform: uppercase;
+    font-weight: 650;
+    font-size: 1.25rem;
+}
+
+.game-slides {
+    background: white;
+    border: 1px solid black;
+    padding: 2px;
+    width: 90%;
+    height: 200px;
+    margin: 0 auto;
+}
+
+.screenshots {
+    display: none;
+    width: 100%;
+}
+
+.game-info {
+    display: flex;
+    justify-content: space-between;
+    text-align: center;
+    font-weight: 450;
+}
 
 /* width 600px and up */
 @media (min-width: 600px) {
