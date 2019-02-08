@@ -9,7 +9,7 @@
     <link rel="icon" href="img/my_favicon.png">
     <title>Tribuite Page - Super Mario</title>
 </head>
-<body class="container">
+<body>
     <div id="main">
         <header>
             <h1 id="title">
@@ -32,14 +32,21 @@
         <section id="timelineScroll">
             <figcaption id="img-caption">The Evolution of Super Mario</figcaption>
             <div id="img-div">
-                <div id="img-container-marios">
-                    <div class="pipeBlendHorizontal"></div>
+                <div class="pipeEnds"></div>
+                <div class="pipeBody">
+                    <div id="image-container"></div>
                     <img id="image" src="img/marios.jpg" alt="Mario's designs through the years">
                 </div>
+                <div class="pipeEnds"></div>
             </div>
         </section>
+        <div class="separator-pipe">
+            <div class="pipeEnds separator-pipeEnds"></div>
+            <div class="pipeBody separator-pipeBody"></div>
+            <div class="pipeEnds separator-pipeEnds"></div>
+        </div>
         <section id="gamesList">
-            <div class="pipeHeadBlue">
+            <div class="pipeEndsVert">
                 <h3>Highlight Releases</h3>
             </div>
             <div class="games">
@@ -66,19 +73,34 @@
                     ...
                 </article>
             </div>
-            <div class="pipeHeadBlue"></div>
+            <div class="pipeEndsVert"></div>
         </section>
+        <div class="separator-pipe">
+            <div class="pipeEnds separator-pipeEnds"></div>
+            <div class="pipeBody separator-pipeBody"></div>
+            <div class="pipeEnds separator-pipeEnds"></div>
+        </div>
         <section>
-            <h3>Resources</h3>
-            <a href="#" id="tribute-info">Wikipage...</a>
-            <a href="#">Official page...</a>
-            <a href="#">Youtube video of history</a>
-            <a href="#">Metacritic...</a>
-            <a href="#">Sales info</a>
+            <div class="pipeEndsVert">
+                <h3>Resources</h3>
+            </div>
+            <div class="games">
+                <a href="#">Wikipage...</a>
+                <a href="#">Official page...</a>
+                <a href="#">Youtube video of history</a>
+                <a href="#">Metacritic...</a>
+                <a href="#">Sales info</a>
+            </div>
+            <div class="pipeEndsVert"></div>
         </section>
+        <div class="separator-pipe">
+            <div class="pipeEnds separator-pipeEnds"></div>
+            <div class="pipeBody separator-pipeBody"></div>
+            <div class="pipeEnds separator-pipeEnds"></div>
+        </div>
         <footer>
             <a href="http://www.safiycham.com/" target="_blank">
-                Tribute Page - Super Mario &nbsp;&nbsp; Safiy Cham &nbsp;&#169;&nbsp;<span id="copyright"></span>
+                Tribute Page - Super Mario&nbsp;&nbsp;safiy cham &nbsp;&#169;&nbsp;<span id="copyright"></span>
             </a>
         </footer>
     </div>
