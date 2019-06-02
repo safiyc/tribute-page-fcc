@@ -13,4 +13,4 @@ A freeCodeCamp responsive website project (part of their front-end certification
 
 This software is licensed under the MIT License
 
-Copyright 2016
+Copyright 2019
